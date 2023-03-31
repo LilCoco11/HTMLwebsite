@@ -1,0 +1,283 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sussex Football Club</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        margin: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        margin: 20px;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-top: 0;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 0;
+      }
+
+      section {
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #333;
+        color: white;
+      }
+
+      .player-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .player-list li {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 20px;
+        width: calc(33.33% - 20px);
+      }
+
+      .player-list li img {
+        max-width: 100%;
+      }
+
+      .player-list li h3 {
+        margin-top: 0;
+      }
+
+      .player-list li p {
+        margin-top: 0;
+      }
+
+      .player-list li a {
+        background-color: #333;
+        color: white;
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      /* Form styles */
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      input[type=text], textarea {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+      }
+      
+      input[type=submit] {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      /* Link styles */
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      header {
+        background-color: #0066cc;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+    
+      header h1 {
+        text-shadow: 2px 2px #000000;
+      }
+
+  
+      header a:hover {
+        color: #ff9900;
+      }
+
+  
+      header::after {
+        content: "";
+        background-color: #0066cc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+
+    }
+		img {
+			float: left;
+			margin-right: 20px;
+		} 
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <img src="Sussex Club.jpg" width="100" height="100" alt="Sussex FC Logo">
+        <h1>Sussex FC</h1>        
+        <p>Welcome to our website!</p>
+      </header>
+      <section>
+        <h2>About Us</h2>
+        <p>Sussex Football Club is a professional soccer team based in the county of Sussex, England. Founded in the early 20th century, Sussex FC has a rich history and a loyal fan base. The team has enjoyed success over the years, winning several titles and cups, and has produced some notable players who have gone on to play for top-tier teams. The home stadium of Sussex FC is located in the heart of the county and is a popular destination for soccer fans from all over the region. </p>
+
+	<br>
+	<p> The stadium has undergone several renovations over the years to keep up with modern standards and can accommodate thousands of spectators. 
+     Sussex FC is known for its passionate fan base and its commitment to developing young talent. The team's youth academy has produced several players who have gone on to play for top teams in England and beyond.</p>
+	<br>
+	<p> Sussex FC is known for its passionate fan base and its commitment to developing young talent. The team's youth academy has produced several players who have gone on to play for top teams in England and beyond. Here below are our list of accolades.
+    </p> 
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Trophy</th>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>League Championship</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>League Cup</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>Super Cup</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Sussex FC Squad Players</h2>
+        <ul class="player-list">
+          <li>
+            <img src="foward.png" alt="Player 1">
+            <h3>Haaland</h3>
+            <p>Position: Forward</p>
+            <a href="#">View Profile</a>
+          </li>
+          <li>
+            <img src="midfield.png" alt="Player 2">
+            <h3>Pedri</h3>
+            <p>Position: Midfielder</p>
+            <a href="#">View Profile</a>
+          </li>
+          <li>
+            <img src="defender.png" alt="Player 3">
+            <h3>Gvardiol</h3>
+            <p>Position: Defender</p>
+            <a href="#">View Profile</a>
+          </li>
+          <li>
+            <img src="goalkeeper.png" alt="Player 4">
+            <h3>Mendy</h3>
+            <p>Position: Goalkeeper</p>
+            <a href="#">View Profile</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Sussex Football Club</p>
+    </footer>
+  </body>
+</html>
